@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AggieBazaar - Fresh Produce Online</title>
+</head>
+<body>
+    <header>
+        <div class="logo">AggieBazaar</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to AggieBazaar</h1>
+            <input type="text" placeholder="Search for products...">
+        </section>
+
+        <section class="categories">
+            <h2>All Products</h2>
+            <div class="product-carousel">
+                <!-- Fruits -->
+                <h3>Fruits</h3>
+                <div class="carousel">
+                    <div class="product-card">
+                        <img src="apple.jpg" alt="Apple">
+                        <h4>Apple</h4>
+                        <p>₹80 each</p>
+                        <button onclick="addToCart('Apple')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="banana.jpg" alt="Banana">
+                        <h4>Banana</h4>
+                        <p>₹40 each</p>
+                        <button onclick="addToCart('Banana')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Vegetables -->
+                <h3>Vegetables</h3>
+                <div class="carousel">
+                    <div class="product-card">
+                        <img src="tomato.jpg" alt="Tomato">
+                        <h4>Tomato</h4>
+                        <p>₹30 each</p>
+                        <button onclick="addToCart('Tomato')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="carrot.jpg" alt="Carrot">
+                        <h4>Carrot</h4>
+                        <p>₹50 each</p>
+                        <button onclick="addToCart('Carrot')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Grains -->
+                <h3>Grains</h3>
+                <div class="carousel">
+                    <div class="product-card">
+                        <img src="rice.jpg" alt="Rice">
+                        <h4>Rice</h4>
+                        <p>₹60 per kg</p>
+                        <button onclick="addToCart('Rice')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="wheat.jpg" alt="Wheat">
+                        <h4>Wheat</h4>
+                        <p>₹50 per kg</p>
+                        <button onclick="addToCart('Wheat')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 AggieBazaar</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
